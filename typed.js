@@ -893,7 +893,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	   */
 	  preStringTyped: function preStringTyped(arrayPos, self) {},
 	
-	  /**
+	  /** 
 	   * After each string is typed
 	   * @param {number} arrayPos
 	   * @param {Typed} self
