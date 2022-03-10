@@ -262,9 +262,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	          var stringAfterSkip = curString.substring(curStrPos + numChars + 1);
 	          curString = stringBeforeSkip + stringSkipped + stringAfterSkip;
 	          numChars--;
-              this.options.onCharTyped(stringSkipped, this);
+              _this2.options.onCharTyped(stringSkipped, this);
 	        } else {
-                this.options.onCharTyped(substr.charAt(0), this);
+                _this2.options.onCharTyped(substr.charAt(0), this);
             }
 
 	        // timeout for any pause after a character
