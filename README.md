@@ -1,4 +1,5 @@
 <img src="https://raw.githubusercontent.com/mattboldt/typed.js/master/logo-cropped.png" width="450px" title="Typed.js" />
+
 # Description
 typed.js est une librairie JS permettant d'animer des textes et de donner l'impression qu'ils sont rédigés en temps réel au clavier.
 Cette librairie comportent différents callback comme onStringTyped() qui est appelé quand la chaine a finit d'être tapée, ou encore onTypingPaused() quand l'animation est mise en pause.
