@@ -899,6 +899,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	   * @param {Typed} self
 	   */
 	  onStringTyped: function onStringTyped(arrayPos, self) {},
+
+      /**
+       * After each character is typed
+       * @param {Typed} self 
+       */
+      onCharTyped: function onCharTyped(self) {},
 	
 	  /**
 	   * During looping, after last string is typed
