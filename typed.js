@@ -320,6 +320,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	      // fires callback function
 	      this.options.onStringTyped(this.arrayPos, this);
+
 	      this.toggleBlinking(true);
 	      // is this the final string
 	      if (this.arrayPos === this.strings.length - 1) {
@@ -902,9 +903,10 @@ return /******/ (function(modules) { // webpackBootstrap
 
       /**
        * After each character is typed
+       * @param {char} char
        * @param {Typed} self 
        */
-      onCharTyped: function onCharTyped(self) {},
+      onCharTyped: function onCharTyped(char, self) {},
 	
 	  /**
 	   * During looping, after last string is typed
