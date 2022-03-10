@@ -909,7 +909,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
       /**
        * After each character is typed
-       * @param {char} char
+       * @param {string} char
        * @param {Typed} self 
        */
       onCharTyped: function onCharTyped(char, self) {},
