@@ -15,4 +15,4 @@ Importer le fichier typed.js dans le document HTML utilisé.
 
 
 # Documentations et liens d'origines de la librairie
-### [Live Demo](http://www.mattboldt.com/demos/typed-js/) | [View All Demos](http://mattboldt.github.io/typed.js/) | [View Full Docs](http://mattboldt.github.io/typed.js/docs) | [mattboldt.com](http://www.mattboldt.com)
+### [Démo](http://www.mattboldt.com/demos/typed-js/) | [Toutes les démos](http://mattboldt.github.io/typed.js/) | [Documentation complète](http://mattboldt.github.io/typed.js/docs) | [mattboldt.com](http://www.mattboldt.com)
