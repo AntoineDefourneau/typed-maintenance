@@ -227,9 +227,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	      this.timeout = setTimeout(function () {
 	        // skip over any HTML chars
 	        curStrPos = _htmlParserJs.htmlParser.typeHtmlChars(curString, curStrPos, _this2);
-	
+
 	        var pauseTime = 0;
 	        var substr = curString.substr(curStrPos);
+
 	        // check for an escape character before a pause value
 	        // format: \^\d+ .. eg: ^1000 .. should be able to print the ^ too using ^^
 	        // single ^ are removed from string
@@ -250,6 +251,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        // check for skip characters formatted as
 	        // "this is a `string to print NOW` ..."
 	        if (substr.charAt(0) === '`') {
+                
 	          while (curString.substr(curStrPos + numChars).charAt(0) !== '`') {
 	            numChars++;
 	            if (curStrPos + numChars > curString.length) break;
@@ -260,8 +262,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	          var stringAfterSkip = curString.substring(curStrPos + numChars + 1);
 	          curString = stringBeforeSkip + stringSkipped + stringAfterSkip;
 	          numChars--;
-	        }
-	
+              this.options.onCharTyped(stringSkipped, this);
+	        } else {
+                this.options.onCharTyped(substr.charAt(0), this);
+            }
+
 	        // timeout for any pause after a character
 	        _this2.timeout = setTimeout(function () {
 	          // Accounts for blinking while paused
@@ -293,6 +298,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }, {
 	    key: 'keepTyping',
 	    value: function keepTyping(curString, curStrPos, numChars) {
+
 	      // call before functions if applicable
 	      if (curStrPos === 0) {
 	        this.toggleBlinking(false);
