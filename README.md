@@ -1,4 +1,5 @@
 <img src="https://raw.githubusercontent.com/mattboldt/typed.js/master/logo-cropped.png" width="450px" title="Typed.js" />
+
 [Dépot d'origine](https://github.com/mattboldt/typed.js)
 
 # Description
